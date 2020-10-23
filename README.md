@@ -10,7 +10,8 @@ Here is all the process to these settings from scratch:
 3) pip install django-cors-headers
 4) add in project/settings.py: 
 	INSTALLED_APPS = ['corsheaders', 'rest_framework',]
-	CORS_ORIGIN_ALLOW_ALL = True (or) CORS_ORIGIN_WHITLIST = ('http://127.0.0.1')
+	CORS_ORIGIN_ALLOW_ALL = True 
+	(or) CORS_ORIGIN_WHITLIST = ('http://127.0.0.1')
 	MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware',]
 5) create models in app-name/models.py, for example:
 	class AppUsers(models.Model):
